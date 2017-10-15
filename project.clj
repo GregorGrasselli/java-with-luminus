@@ -33,7 +33,7 @@
   :java-source-paths ["src/java"]
   :aliases {"uberjar" ["do"
                        ["with-profile" "base" "javac"]
-                       ["lein" "uberjar"]]}
+                       ["uberjar"]]}
   :test-paths ["test/clj"]
   :resource-paths ["resources" "target/cljsbuild"]
   :target-path "target/%s/"
