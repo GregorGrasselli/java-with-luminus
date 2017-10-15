@@ -31,12 +31,9 @@
   :jvm-opts ["-server" "-Dconf=.lein-env"]
   :source-paths ["src/clj" "src/cljc"]
   :java-source-paths ["src/java"]
-  :aliases {"build" ["do"
-                       ["with-profile" "base" "javac"]
-                       ["uberjar"]]}
   :test-paths ["test/clj"]
   :resource-paths ["resources" "target/cljsbuild"]
-  :target-path "target/"
+  :target-path "target/%s/"
   :main ^:skip-aot empty.core
 
   :plugins [[lein-cprop "1.0.3"]
