@@ -1,4 +1,4 @@
-(ns user
+(ns empty.user
   (:require 
             [mount.core :as mount]
             [empty.figwheel :refer [start-fw stop-fw cljs]]

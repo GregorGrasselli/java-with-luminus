@@ -99,9 +99,9 @@
 
 
                   :doo {:build "test"}
-                  ; :source-paths ["env/dev/clj"]
+                  :source-paths ["env/dev/clj"]
                   :resource-paths ["env/dev/resources"]
-                  :repl-options {:init-ns user}
+                  :repl-options {:init-ns empty.user}
                   :injections [(require 'pjstadig.humane-test-output)
                                (pjstadig.humane-test-output/activate!)]}
    :project/test {:resource-paths ["env/test/resources"]
