@@ -30,6 +30,7 @@
 
   :jvm-opts ["-server" "-Dconf=.lein-env"]
   :source-paths ["src/clj" "src/cljc"]
+  :java-source-paths ["src/java"]
   :test-paths ["test/clj"]
   :resource-paths ["resources" "target/cljsbuild"]
   :target-path "target/%s/"
