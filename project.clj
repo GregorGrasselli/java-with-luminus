@@ -36,7 +36,7 @@
                        ["uberjar"]]}
   :test-paths ["test/clj"]
   :resource-paths ["resources" "target/cljsbuild"]
-  :target-path "target/%s/"
+  :target-path "target/"
   :main ^:skip-aot empty.core
 
   :plugins [[lein-cprop "1.0.3"]
