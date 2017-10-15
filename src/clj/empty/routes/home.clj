@@ -3,7 +3,8 @@
             [compojure.core :refer [defroutes GET]]
             [ring.util.http-response :as response]
             [clojure.java.io :as io])
-  (:import empty.Hello))
+  (:import empty.Hello)
+  )
 
 (defn home-page []
   (layout/render "home.html"))

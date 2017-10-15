@@ -31,7 +31,7 @@
   :jvm-opts ["-server" "-Dconf=.lein-env"]
   :source-paths ["src/clj" "src/cljc"]
   :java-source-paths ["src/java"]
-  :aliases {"uberjar" ["do"
+  :aliases {"build" ["do"
                        ["with-profile" "base" "javac"]
                        ["uberjar"]]}
   :test-paths ["test/clj"]
@@ -53,7 +53,7 @@
 
   :profiles
   {:uberjar {:omit-source true
-             :prep-tasks ["compile" ["cljsbuild" "once" "min"]]
+             :prep-tasks ["javac" "compile" ["cljsbuild" "once" "min"]]
              :cljsbuild
              {:builds
               {:min

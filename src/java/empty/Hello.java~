@@ -1,8 +1,0 @@
-package empty;
-
-
-public class Hello {
-
-    private String name;
-
-    
